@@ -1,0 +1,32 @@
+h1{
+    font-size: 50px;
+    text-align: center;
+    background-color: white;
+    color: purple;
+    border-style: ridge;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    margin: 60px;
+    }
+body{
+    background-color: black;
+}
+p{
+    margin: 60px ;
+    font-size: 25px;
+    background-color: white;
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 40px;
+padding-right: 80px;
+padding-left: 80px;
+}
+footer{
+    margin: 60px ;
+    font-size: 15px;
+    background-color: white;
+    text-align: center;
+  
+}
