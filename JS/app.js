@@ -120,6 +120,7 @@ let myNumber = 3;
 for (let i = 1; i <= 4; i++) {
 
     let userNumberr= Number(prompt('guess a number between 0 and 5'));
+    console.log(userNumberr);
     if (userNumberr < myNumber) {
         alert('too low');
     }
@@ -152,7 +153,7 @@ console.log(myMeal);
 
 for (let i = 0; i <= 5; i++) {
 let userFood=prompt('Can you guess what is my favorite fast food?').toLowerCase();
-
+console.log(userFood);
 
 if (userFood === myMeal[0] || userFood === myMeal[1] || userFood === myMeal[2] || userFood === myMeal[3] || userFood === myMeal[4] || userFood === myMeal[5]){
     alert('Great, this one of my fav meals');
@@ -166,6 +167,6 @@ if (userFood === myMeal[0] || userFood === myMeal[1] || userFood === myMeal[2] |
 }
 
 }
-alert('pizza, burger, pasta,chicken,fish,sushi');
-console.log(score);
+alert('my favorite fast meals : pizza, burger, pasta, chicken, fish, sushi');
+console.log('Total score is ' + score);
 alert('I enjoyed with you '+ userName + ' Your Total Score is '+ score + ' , have a Nice day');
