@@ -9,11 +9,20 @@ h1{
     padding-left: 50px;
     padding-bottom: 50px;
     margin: 60px;
-    }
+}
 body{
     background-color: black;
 }
-p{
+
+ul{
+    padding-top: 50px;
+    margin: 60px ;
+    font-size: 25px;
+    background-color: white;
+    padding-bottom: 50px;
+
+}
+/* p{
     margin: 60px ;
     font-size: 25px;
     background-color: white;
@@ -23,10 +32,19 @@ p{
 padding-right: 80px;
 padding-left: 80px;
 }
+*/ 
 footer{
     margin: 60px ;
     font-size: 15px;
     background-color: white;
     text-align: center;
   
+}
+
+ol {
+margin: 60px ;
+font-size: 25px;
+background-color: white;
+padding-bottom: 50px;
+padding-top: 50px;
 }

@@ -1,4 +1,6 @@
 'use strict';
+var score = 0;
+
 
 let userName =prompt('Hi, Could You please tell me Your Name?');
 console.log(userName);
@@ -15,6 +17,9 @@ case 'YES':
 case 'Y':
 //console.log('yes You Right, I like Purple');
 alert('yes You Right, I like Purple');
+ score++;
+ console.log(score);
+
     break;
 case 'NO':
 case 'N':
@@ -24,25 +29,28 @@ alert('Wrong, I like Purple');
 }
 
 
-let z= prompt('What about you? Do You like Purple?');
+let z= prompt('Do you think I Like reading books?');
 console.log(z);
 
 switch (z.toUpperCase()){
     case 'YES':
     case 'Y':
-    //console.log('We like The same Color');
-   alert(' We like The same Color');
+    //console.log('Yes, I Like reading Books');
+   alert('Yes, I Like reading Books');
+   score++;
+   console.log(score);
+
    break;
    case 'NO':
     case 'N':
-       // console.log('i guess You like another color');
-        alert('i guess You like another color');
+       // console.log('You Wrong, I Like Reading Books');
+        alert('You Wrong, I Like Reading Books');
        break;
 }
 
 
 
-let movies = prompt('ok i Guess you like Frozen Moveie, just like me?');
+let movies = prompt('ok Do you think I Like Frozen Movie?');
 console.log(movies);
 
 
@@ -50,12 +58,15 @@ switch (movies.toUpperCase()) {
 case 'YES':
 case 'Y':
 //console.log('it\'s a nice movie');
-alert('it\'s a nice movie');
-    break;
+alert('no, i Don\'t Like this movie');
+break;
 case 'NO':
-case'N':
-//console.log('i think you like another movie');
-alert('i think you like another movie');
+    case'N':
+    //console.log('i think you like another movie');
+    alert('Correct, I don\'t Like Frozen Movie');
+    score++;
+    console.log(score);
+
     break;
 }
 
@@ -67,6 +78,9 @@ switch (fruit.toUpperCase()){
     case 'Y':
     //console.log('i like all kinds of Fruits');  
    alert('i like all kinds of Fruits');
+   score++;
+   console.log(score);
+
    break;
    case 'NO':
     case 'N':
@@ -75,19 +89,83 @@ alert('no, i like apple it has a Good Taste!');
        break;
 }
 
-let like= prompt('did you liked this guessing game?');
+let like= prompt('Do you think I like coffee?');
 console.log(like);
 
 switch (like.toUpperCase()){
     case 'YES':
     case 'Y':
-    //console.log('Thank You For visiting My Page have a Nice day');
-   alert('Thank You');
+    //console.log('yes i like coffee');
+   alert('yes i like coffee');
+   score++;
+   console.log(score);
+
    break;
    case 'NO':
     case 'N':
-      //  console.log('I Hope you liked Next Time');
-alert('I Hope you liked Next Time');
+      //  console.log('no I Like Coffee, coffee is delicious');
+alert('no I Like Coffee, coffee is delicious');
        break;
 }
-alert('I enjoyed with you '+ userName + ', I hope you visit my page again, have a Nice day');
+
+//-------------------------//
+
+alert('Now answer with a Number, it\'s guessing a number game, ok?');
+
+let ss= alert('Can You Guess How Many times I eat in Ramadan Night?');
+
+
+let myNumber = 3;
+
+for (let i = 1; i <= 4; i++) {
+
+    let userNumberr= Number(prompt('guess a number between 0 and 5'));
+    if (userNumberr < myNumber) {
+        alert('too low');
+    }
+
+    else if (userNumberr > myNumber) {
+        alert('too high');
+
+    }
+    else if (userNumberr == 3) {
+
+        alert('Correct, You Right');
+        score++;
+        console.log(score);
+
+        break;
+
+    }}
+
+    alert('actually i eat 3 times in Ramadan Night ');
+//----------------------------------------
+
+
+alert('Now Guess between 6 options of my Favorite Fast Meals, Enter Words Ok?');
+
+
+
+let myMeal = ['pizza', 'burger', 'pasta','chicken','fish','sushi'];
+console.log(myMeal);
+
+
+for (let i = 0; i <= 5; i++) {
+let userFood=prompt('Can you guess what is my favorite fast food?').toLowerCase();
+
+
+if (userFood === myMeal[0] || userFood === myMeal[1] || userFood === myMeal[2] || userFood === myMeal[3] || userFood === myMeal[4] || userFood === myMeal[5]){
+    alert('Great, this one of my fav meals');
+    score++;
+    console.log(score);
+
+    break;
+}else {
+    alert('Try to Guess again');
+
+}
+
+}
+alert('pizza, burger, pasta,chicken,fish,sushi');
+console.log(score);
+alert('I enjoyed with you '+ userName + ' Your Total Score is '+ score + ' , have a Nice day');
