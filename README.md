@@ -4,4 +4,8 @@
 - I wrote it using Visual Studio Code, Github.
 - When You enter the page, just answer the questions with yes/no or y/n , numbers, and words and read the replies, then read my story.
  
+ The Driver : Mahmoud Khader Added Functions to Mayyadah's Project.
+ 
+ The Navigator : Mayyadah Shehadeh guided him.
+ 
  - copyright (c) 2021 Mayyadah Shehadeh
