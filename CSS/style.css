@@ -11,9 +11,19 @@ h1{
     margin: 60px;
 }
 body{
-    background-color: black;
+    font-family: 'Architects Daughter', cursive;
+ background-color: black;
+}
+nav ul li{
+    display: inline;
+    margin: 10px;
+    text-decoration: none;
+
 }
 
+nav ul li a{
+    text-decoration: none;
+}
 ul{
     padding-top: 50px;
     margin: 60px ;

@@ -174,21 +174,15 @@ console.log(myMeal);
 
 
 for (let i = 0; i <= 5; i++) {
-let userFood=prompt('Can you guess what is my favorite fast food?').toLowerCase();
-console.log(userFood);
+let userFood=prompt('Can you guess what is my favorite fast food?', 'pizza, burger, pasta').toLowerCase();
 
-if (userFood === myMeal[0] || userFood === myMeal[1] || userFood === myMeal[2] || userFood === myMeal[3] || userFood === myMeal[4] || userFood === myMeal[5]){
-    alert('Great, this one of my fav meals');
+for (let j=0; j<myMeal.length;j++){
+if( userFood == myMeal[j]){  
+   alert('Great, this one of my fav meals');
     score++;
-    console.log(score);
-
+    i = 7;
     break;
-}else {
-    alert('Try to Guess again');
-
-}
-
-}
+}}}
 alert('my favorite fast meals : pizza, burger, pasta, chicken, fish, sushi');
 }
 qusetion7();
